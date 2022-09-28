@@ -27,4 +27,12 @@ this.tab=[objectToSubmit, ...this.tab.filter(item => item.id!=objectToSubmit.id)
 return new Promise(resolve => resolve())
   }
  
+  getMemberById(currentId:String):Promise<Member>
+  {
+   // return this.httpClient.get<Member>('link').toPromise(); pour  BackeND
+    return new Promise(resolve => resolve(
+      this.tab.filter(item => item.id===currentId)[0]?? null
+    ))
+  }
+
 }

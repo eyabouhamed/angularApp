@@ -46,9 +46,10 @@
       <ng-container matColumnDef="icon">
         <th mat-header-cell *matHeaderCellDef>   </th>
         <td mat-cell *matCellDef="let element"> 
-            <mat-icon> border_color</mat-icon>
+          
+           <button routerLink="{{element.id}}/edit"><mat-icon> edit</mat-icon></button>
             
-            <mat-icon>delete</mat-icon> 
+           <button> <mat-icon>delete</mat-icon> </button> 
         </td>
       
       </ng-container>

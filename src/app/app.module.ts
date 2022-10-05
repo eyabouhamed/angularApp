@@ -15,13 +15,15 @@ import {MatInputModule} from '@angular/material/input';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+ 
 @NgModule({
   declarations: [
     AppComponent,
     MembersComponent,
     EtudiantsComponent,
-    MemberFormComponent
+    MemberFormComponent,
+    ConfirmDialogComponent
     
   ],
   imports: [
@@ -36,7 +38,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatAutocompleteModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+     
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

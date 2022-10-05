@@ -60,7 +60,7 @@ export class MemberFormComponent implements OnInit {
   onSub(): void {
     console.log(this.form.value)
     //appeler la fct du service savemember pour ajouter laligne dans le tab
-    const objToSubmit = this.form.value;
+    const objToSubmit ={ ...this.currentMember,...this.form.value};
     this.MemberService.saveMember(objToSubmit).then(() => { this.router.navigate(['./members']) });
   }
 }

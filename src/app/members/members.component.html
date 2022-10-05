@@ -4,6 +4,12 @@
            
    <br>
    <br>
+
+   <mat-form-field appearance="standard">
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+  </mat-form-field>
+
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
  
@@ -49,7 +55,7 @@
           
            <button routerLink="{{element.id}}/edit"><mat-icon> edit</mat-icon></button>
             
-           <button> <mat-icon>delete</mat-icon> </button> 
+           <button  (click)="openDialog('0ms', '0ms')"> <mat-icon>delete</mat-icon> </button> 
         </td>
       
       </ng-container>

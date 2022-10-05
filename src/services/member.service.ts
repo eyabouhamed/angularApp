@@ -20,8 +20,8 @@ export class MemberService {
    // return this.httpClient.post<Member>('linkToRestApi', member).toPromise();
     //creation de tab
     const objectToSubmit={...MemberToInsert,
-      id: Math.ceil(Math.random()*10000).toString(),
-      createdDate: new Date().toISOString(),
+      id: MemberToInsert.id ??  Math.ceil(Math.random()*10000).toString(),
+      createdDate: MemberToInsert.createdDate ?? new Date().toISOString(),
     };
 this.tab=[objectToSubmit, ...this.tab.filter(item => item.id!=objectToSubmit.id)]
 return new Promise(resolve => resolve())
@@ -34,5 +34,17 @@ return new Promise(resolve => resolve())
       this.tab.filter(item => item.id===currentId)[0]?? null
     ))
   }
+  deleteMemberById(currentId:String):Promise<void>
+  {
+    // return this.httpClient.delete<void>('link').toPromise
 
+     this.tab=this.tab.filter(item => item.id!=currentId);
+      return new Promise(resolve => resolve());
+  
+  }
+  getAllMembers():Promise<Member[]>
+  {
+    // return this.httpClient.get<Member[]>('link').toPromise
+    return new Promise(resolve => resolve(this.tab));
+  }
 }

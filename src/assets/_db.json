@@ -1,24 +1,51 @@
 {
-"Members":[
+  "Members": [
     {
-      "id":"1",
-      "cin":"1234",
-      "name":"eya",
-      "createdDate":"18/12/2022",
-      "cv":"https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
-      "type":"etudiant"
+      "id": "1",
+      "cin": "1234",
+      "name": "eya",
+      "createdDate": "18/12/2022",
+      "cv": "https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
+      "type": "etudiant"
     },
-    { "id":"2",
-    "cin":"123456",
-    "name":"eyaB",
-    "createdDate":"13/10/2022",
-    "cv":"lien",
-    "type":"teacher"},
-    { "id":"3",
-    "cin":"123456789",
-    "name":"Bouha",
-    "createdDate":"1/1/2022",
-    "cv":"lien",
-    "type":"etudiant"}
+    {
+      "id": "2",
+      "cin": "123456",
+      "name": "eyaB",
+      "createdDate": "13/10/2022",
+      "cv": "lien",
+      "type": "teacher"
+    },
+    {
+      "id": "3",
+      "cin": "123456789",
+      "name": "Bouha",
+      "createdDate": "1/1/2022",
+      "cv": "lien",
+      "type": "etudiant"
+    }
   ]
+  ,
+  
+    "Articles": [
+        {
+            "idArt": "1",
+            "titre": "eeee",
+            "annee": "2022",
+            "auteur": ""
+        },
+        {
+            "idArt": "2",
+            "titre": "rrrr",
+            "annee": "2022",
+            "auteur": ""
+        },
+        {
+            "idArt": "3",
+            "titre": "gggg",
+            "annee": "2022",
+            "auteur": ""
+        }
+    ]
+
 }

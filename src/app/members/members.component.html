@@ -1,6 +1,6 @@
      
    <br>
-  <div  fxLayout="row" fxLayoutAlign="end center" ><button mat-raised-button color="primary" > <mat-icon>add</mat-icon>Create New</button></div>
+  <div  fxLayout="row" fxLayoutAlign="end center" ><button mat-raised-button color="primary" style="margin-left:90% ;"> <mat-icon>add</mat-icon>Create New</button></div>
            
    <br>
    <br>
@@ -55,7 +55,7 @@
           
            <button routerLink="{{element.id}}/edit"><mat-icon> edit</mat-icon></button>
             
-           <button  (click)="openDialog('0ms', '0ms')"> <mat-icon>delete</mat-icon> </button> 
+           <button  (click)="delete(element.id)"> <mat-icon>delete</mat-icon> </button> 
         </td>
       
       </ng-container>

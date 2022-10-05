@@ -12,18 +12,26 @@ import {MatButtonModule} from '@angular/material/button';
 import { MemberFormComponent } from './member-form/member-form.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import {MatAutocompleteModule} from '@angular/material/autocomplete';
+
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
- 
+import {MatDialogModule} from '@angular/material/dialog';
+import { LayoutComponent } from './layout/layout.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatListModule} from '@angular/material/list';
+import { ArticlesComponent } from './articles/articles.component';
 @NgModule({
   declarations: [
     AppComponent,
     MembersComponent,
     EtudiantsComponent,
     MemberFormComponent,
-    ConfirmDialogComponent
+    ConfirmDialogComponent,
+    LayoutComponent,
+    ArticlesComponent
     
   ],
   imports: [
@@ -35,11 +43,14 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MatFormFieldModule,
     MatButtonModule,
     MatInputModule,
-    MatAutocompleteModule,
+    MatMenuModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-     
+    MatDialogModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule
     
   ],
   providers: [],

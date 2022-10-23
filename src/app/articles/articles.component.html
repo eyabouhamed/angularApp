@@ -37,17 +37,19 @@
       
        
        
-<!--        
+      
        <ng-container matColumnDef="icon">
          <th mat-header-cell *matHeaderCellDef>   </th>
          <td mat-cell *matCellDef="let element"> 
            
-            <button routerLink="{{element.id}}/edit"><mat-icon> edit</mat-icon></button>
+            <!-- <button routerLink="{{element.idArt}}/edit"" ><mat-icon> edit</mat-icon></button> -->
              
-            <button  (click)="delete(element.id)"> <mat-icon>delete</mat-icon> </button> 
+            <button (click)="delete(element.idArt)"> <mat-icon>delete</mat-icon> </button>  
+            <button routerLink="{{element.idArt}}/affect"><mat-icon> add_task</mat-icon></button>
+
          </td>
        
-       </ng-container> -->
+       </ng-container> 
  
      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>

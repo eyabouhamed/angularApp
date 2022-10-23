@@ -12,7 +12,6 @@ import {MatButtonModule} from '@angular/material/button';
 import { MemberFormComponent } from './member-form/member-form.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
@@ -23,7 +22,17 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatListModule} from '@angular/material/list';
 import { ArticlesComponent } from './articles/articles.component';
+import { AffectComponent } from './affect/affect.component';
+import {MatSelectModule} from '@angular/material/select';
+import { MatNativeDateModule, MatOptionModule } from '@angular/material/core';
+import {FirebaseModule} from '../app/Firebase.module';
+import { LoginComponent } from './login/login.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
+ 
 @NgModule({
+ 
   declarations: [
     AppComponent,
     MembersComponent,
@@ -31,10 +40,15 @@ import { ArticlesComponent } from './articles/articles.component';
     MemberFormComponent,
     ConfirmDialogComponent,
     LayoutComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    AffectComponent,
+    LoginComponent
     
   ],
   imports: [
+    MatNativeDateModule,
+    MatDatepickerModule,
+     FirebaseModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -50,7 +64,11 @@ import { ArticlesComponent } from './articles/articles.component';
     MatDialogModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatCardModule,
+
     
   ],
   providers: [],
